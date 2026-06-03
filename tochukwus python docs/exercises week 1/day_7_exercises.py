@@ -66,9 +66,9 @@ print("The list is bigger")
 
 # 2
 ''' A String is simple a combination of characters enclosed in quotation marks
-A list is a group of ordered, indexed items which can be modified, sorted,etc
-A tuple  group of ordered, indexed items  but cannot be reassigned
-A set is a group of unordered, unindexed and unigue items.
+A list is a group of ordered, indexed items which can be modified,and allows duplicates
+A tuple  group of ordered, indexed items  but is unmodifiable and allows duplicates.
+A set is a group of unordered, unindexed and unique items.
 
 '''
 
