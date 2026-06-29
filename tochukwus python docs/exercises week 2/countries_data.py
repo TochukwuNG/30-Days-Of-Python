@@ -2634,14 +2634,63 @@ for country in countries_data:
             language_count[language] += 1
         else:
             language_count[language] = 1
-"""print(language_count)"""
+print(language_count)
 
 for _ in range(10):
     max_lang = " "
     max_count = 0
+    
     for lang, count in language_count.items():
         if count > max_count:
             max_count = count
             max_lang = lang
     print(f"{max_lang}: {max_count} countries")
     del language_count[max_lang]
+
+
+#Day 11 Exercise
+#1
+print(20000)
+def most_spoken_languages(lst = countries_data):
+    count = {}
+    for country in lst:
+        for language in country["languages"]:
+            if language in count:
+                count[language] += 1
+            else:
+                count[language] = 1
+
+    for _ in range(10):
+        maximum_count = 0
+        maximum_lang = ""
+
+        for i, j in count.items():
+            if j > maximum_count:
+                maximum_count = j
+                maximum_lang = i
+        print(f"{maximum_lang}: {maximum_count} countries")
+        del count[maximum_lang]
+
+most_spoken_languages()
+
+#2
+def get_population(country):
+    return country["population"]
+
+
+
+def most_populated_countries(lst):
+    sorted_countries = sorted(lst, key=get_population, reverse=True)
+    top_populated = []
+
+    for country in sorted_countries[:10]:
+        formatted_result = {country["name"], country["population"]
+        }
+        top_populated.append(formatted_result)
+        
+    return top_populated
+print(most_populated_countries(countries_data))
+
+
+
+

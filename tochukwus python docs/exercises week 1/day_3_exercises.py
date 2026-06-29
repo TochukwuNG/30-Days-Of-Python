@@ -1,4 +1,4 @@
-#Day 3 Exercises
+# Day 3 Exercises
 
 
 age = 18
@@ -44,10 +44,10 @@ print(m)
 
 print(slope == m)
 
-for x in range (-10,10):
-    y = (x ** 2 + 6 * x + 9 )
-    if y==0:
-     print(f'Solution found. When x = {x}, y = 0 ')
+for x in range(-10, 10):
+    y = (x ** 2 + 6 * x + 9)
+    if y == 0:
+        print(f'Solution found. When x = {x}, y = 0 ')
 
 
 python = "python"
@@ -68,7 +68,7 @@ num = int(input("Enter a number: "))
 if num % 2 == 0:
     print(f"{num} is even")
 else:
-   print(f"{num} is odd")
+    print(f"{num} is odd")
 
 
 number_1 = int("2")
@@ -80,16 +80,13 @@ print(float('9.8') == 10)  # error in question changed to float
 
 hours = int(input("Enter hours: "))
 rate_per_hour = int(input("Enter rate per hour: "))
-pay =  hours * rate_per_hour
+pay = hours * rate_per_hour
 
-print("Your weekly earning is " ,pay)
+print("Your weekly earning is ", pay)
 
 years = int(input("Enter number of years you have lived: "))
-seconds = years * 60 * 60 *24 * 365
-print("You have lived for ", seconds ,"seconds." )
+seconds = years * 60 * 60 * 24 * 365
+print("You have lived for ", seconds, "seconds.")
 
-for a in range (1,6):
-   print(a, 1, a, a**2, a**3)
-
-
-
+for a in range(1, 6):
+    print(a, 1, a, a**2, a**3)

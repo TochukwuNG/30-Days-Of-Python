@@ -1,5 +1,5 @@
 # Day 2: 30 Days of python programming
-#level 1
+# level 1
 first_name = "Tochukwu"
 last_name = "Nwachukwu"
 full_name = "Tochukwu Nwachukwu"
@@ -13,9 +13,10 @@ is_light_on = True
 first, middle, last, current_age = "Tochukwu", "Gideon", "Nwachukwu", 18
 print(middle)
 
-#level 2
-print(type(full_name), type(country), type(city), type(age), type(is_married), type(is_true),type(is_light_on))
-print (len(first_name))
+# level 2
+print(type(full_name), type(country), type(city), type(age),
+      type(is_married), type(is_true), type(is_light_on))
+print(len(first_name))
 compare = (len(first_name) == len(last_name))
 print(compare)
 num_one = 5
@@ -32,7 +33,7 @@ area_of_circle = 3.14 * radius ** 2
 circum_of_circle = 2 * 3.14 * radius
 radius = int(input("Enter the raidus: "))
 area = 3.14 * radius ** 2
-print (area)
+print(area)
 first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 country = input("Enter your country: ")

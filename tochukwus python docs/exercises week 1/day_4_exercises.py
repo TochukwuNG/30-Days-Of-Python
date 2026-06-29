@@ -1,7 +1,9 @@
 # 1
 string_1 = 'Thirty', 'Days', 'Of', 'Python'
+
 final_str = ' '.join(string_1)
 print(final_str)
+
 
 # 2
 string_2 = 'Coding', 'For', 'All'
@@ -32,6 +34,7 @@ print(company.swapcase())
 sliced = company[0:6]
 print(sliced)
 
+
 # 10
 print(company.find("Coding"))
 
@@ -48,6 +51,7 @@ print(company.split())
 # 14
 string_4 = ("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon")
 print(string_4.split(", "))
+
 
 # 15
 print(company[0])
@@ -111,7 +115,6 @@ sentence_2 = ("thirty_days_of_python")
 print(sentence_1.isidentifier())
 print(sentence_2.isidentifier())
 
-# The 2nd variable returns True
 
 # 32
 list_1 = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
