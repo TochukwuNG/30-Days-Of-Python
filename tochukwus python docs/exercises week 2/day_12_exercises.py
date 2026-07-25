@@ -3,7 +3,6 @@ import string
 
 # Exercises: Day 12
 # Exercises: Level 1
-
 # 1
 
 
@@ -14,6 +13,9 @@ def random_user_id():
         result_list.append(random.choice(characters))
 
     return "".join(result_list)
+
+
+print(random_user_id())
 
 # 2
 
@@ -34,7 +36,8 @@ def user_id_gen_by_user():
 
     return "\n".join(id_generated)
 
-# print(user_id_gen_by_user())
+
+print(user_id_gen_by_user())
 
 # 3
 
@@ -46,7 +49,8 @@ def rgb_color_gen():
 
     return f"#rgb({red},{green},{blue})"
 
-# print(rgb_color_gen())
+
+print(rgb_color_gen())
 
 # Exercises: Level 2
 # 1
@@ -62,5 +66,52 @@ def list_of_hexa_colors(length):
         color_list.append(color)
     return color_list
 
+
+print(list_of_hexa_colors(6))
+
 # 2
-# def list_of_rgb_colors(length):
+
+
+def list_of_rgb_colors(length):
+    rgb_list = []
+    for _ in range(length):
+        red = random.randint(0, 255)
+        blue = random.randint(0, 255)
+        green = random.randint(0, 255)
+        rgb_list.append(f"rgb({red},{green},{blue})")
+
+    return rgb_list
+
+
+print(list_of_rgb_colors(3))
+
+# 3
+
+
+def generate_colors(type, number):
+    if type == "hexa":
+        return list_of_hexa_colors(number)
+
+    elif type == "rgb":
+        return list_of_rgb_colors(number)
+    else:
+        return "Invalid color type. Use 'hexa' or 'rgb'."
+
+
+print(generate_colors("rgb", 5))
+
+# Exercises: Level 3
+# 1
+
+
+def shuffle_list(lst):
+    shuffled_list = random.sample(lst, len(lst))
+
+# 2
+
+
+def seven_unique_randoms():
+    return random.sample(range(10), 7)
+
+
+print(seven_unique_randoms())
